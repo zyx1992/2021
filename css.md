@@ -4,4 +4,6 @@
 
 二、margin重叠问题
 
-![margin示例](./margin.png)
+相邻的两个dom元素的margin会重叠。即子元素的margin也会影响父元素的margin重叠。
+
+解决：变成BFC模式或为子元素添加padding
