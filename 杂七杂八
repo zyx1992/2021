@@ -3,7 +3,7 @@
 
 参考文章：https://blog.fundebug.com/2019/01/03/understand-browser-rendering/
 
-浏览器分为：渲染引擎和js引擎。js操作dom相当于不同线程间的通信操作。
+浏览器分为：渲染引擎和js引擎。js操作dom相当于不同线程间的通信操作。两个线程不能同时运行，构建dom时遇到js，则执行js引擎操作，完成后继续dom构建。
 
 渲染引擎：HTML + CSS 构建渲染树，然后重排、重绘
 js引擎：执行js对于html和css的操作，引发重排、重绘
