@@ -7,3 +7,5 @@
 
 渲染引擎：HTML + CSS 构建渲染树，然后重排、重绘
 js引擎：执行js对于html和css的操作，引发重排、重绘
+
+注意：js也会使得css阻塞dom的构建。因为js操作css时，需要拿到完整的cssom，因此会先执行cssom构建，然后执行js，最后继续执行dom构建操作
