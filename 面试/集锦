@@ -5,5 +5,33 @@
 2. react的ssr方案
 3. webpack热更新机制
 4. websocket
-5. 实时聊天
-6. 
+5. 实时聊天如何检测对方状态
+6. 多语言实现方案
+7. 柯里化，使用场景
+8. webpack中loader和plugin的区别，使用场景
+9. npm 如何同步执行两条命令，插件？
+10. Array的方法，sort返回什么，如何用sort随机打乱数组
+11. http 3次握手，4次挥手，为什么要4次挥手
+12.编程题：两个大数相加
+13. xss、csrf
+14. vue和react对比体验？
+
+
+58
+一面：
+1. 垂直居中
+2. BFC,高度塌陷解决
+3. vue router的两种类型
+4. vue通信方式
+5. spa优化
+6. 防抖、截流实现，场景应用
+7. debugger方法
+8. Map和Object和WeakMap区别，symbol作用，使用场景
+9. for of和for in 
+10. loader和plugin区别、各自的生命周期，loader中array的执行顺序
+11. sdk设计考虑问题
+12. http1和2的区别
+13. ssr实现注意的东西
+14. 无限滚动列表设计，一万条数据如何实现，dom过多如何处理
+15. 移动端如何适配
+16. 编程：防抖、深拷贝
