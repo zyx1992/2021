@@ -25,4 +25,12 @@ mappings: "AAAb, SHSHHS, JJSDJS"
 
 相当于mapping中针对每个names进行位置映射，【输出文件列位置】|【引用文件索引】|【输入文件行索引】【输入文件列索引】|【数据索引】，其中每个位置为了优化字节，想要省略“|”，但是原来的数字位置无法合并，所以通过base64的转码生成字符的位置编码
 
+## plugin和loader
 
+loader: 主要针对各种类型文件，进行解析替换，输出webpack可以识别的js文件
+
+开发loader: 匹配类型文件，每个loader会接受上一个文件处理的结果，依次进行操作
+
+plugin: 是loader的超集，主要利用webpack在打包构建提供的各生命周期的钩子，及发布订阅的模式，进行自定义的操作
+
+开发plugin: 一定要提供一个apply方法，其中有compiler参数，会提供各个生命周期的钩子，通过compiler.hooks.somehook.tap去操作每个周期的compilation
