@@ -1,0 +1,15 @@
+## nuxt性能优化
+
+前言：搭建平台是使用nuxt进行发布的，所以在高并发的前提下会出先白屏等问题
+
+优化方案：
+
+1. nuxt提供组件缓存：可以在nuxt.config.js的render设置对应的lru缓存，进行对应组件的缓存
+
+2. nuxt提供页面缓存：可以在nuxt.config.js的serverConfigMiddle中设置对应的lru缓存
+
+3. API缓存：可以在服务端获取后端数据请求时，对接口数据设置缓存
+
+4. pm2实现node端的缓存：对node开启多进程管理，并监控，自动重启等
+
+5. node数据缓存：可以使用redies缓存
